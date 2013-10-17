@@ -1,0 +1,268 @@
+@media screen and (min-width: 960px) {
+	#header, #content {
+		width: 1000px;
+	}
+	#content {
+		margin: 0 20px 0 0;
+	}
+		#content p, table {
+			font-size: 16px;
+			line-height: 30px;
+		}
+	#logo {
+		height: 100px;
+		width: 600px;
+		background-size: 100%;
+	}
+	#login {
+		width: 142px;
+		margin: 24px 0 0 13px;
+	}
+}
+@media screen and (max-width: 960px) {
+	#header, #content {
+		width: 758px;
+	}
+	#content {
+		margin: 0 20px 0 0;
+	}
+	#logo {
+		width: 600px;
+		height: 100px;
+		background-size: 100%;
+	}
+	#login {
+		width: 142px;
+		margin: 24px 0 0 13px;
+	}
+}
+@media screen and (max-width: 758px) {
+	#header, #content {
+		width: 524px;
+	}
+	#content  h1  {
+		margin: 0 0 24px 0;
+	}
+	#logo {
+		width: 524px;
+		height: 87px;
+		background-size: 524px 87px;
+	}
+	#login {
+		width: 435px;
+		height: 26px;
+		margin: 0px;
+	}
+	#login_button {
+		margin: 0px 0px -7px 0px
+	}
+}
+@media screen and (max-width: 524px) {
+	#header, #content {
+		width: 292px;
+	}
+	#content  h1 {
+		font-size: 24px; 
+	}
+	#content h2 {
+		font-size: 20px;
+	}
+	#content {
+		font-size: 12px;
+	}
+	#logo {
+		width: 292px;
+		height: 49px;
+		background-size: 292px 49px;
+	}
+	#login {
+		width: 290px;
+		height: 50px;
+		margin: 0px;
+		vertical-align: top;
+	}
+	#login_button {
+		margin: 0px 0px -7px 0px
+	}
+}
+
+html, body, div, span, applet, object, iframe, 
+h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+@font-face {
+ font-family:font-name;
+ src: url(content/corbel.ttf);
+} 
+  
+html {
+	height: 100%;
+	width: 100%;
+	background-color: #ECECEC;
+	background-image: -webkit-linear-gradient(#ECECEC 50%, white 100%); 
+	background-image: -moz-linear-gradient(#ECECEC 50%, white 100%); 
+	background-image: -o-linear-gradient(#ECECEC 50%, white 100%); 
+	background-image: linear-gradient(#ECECEC 50%, white 100%);
+}
+
+#start a:active {color: red;}
+#start {
+	display: block;
+	float: right;
+	background-color: white;
+	padding: 0 5px 5px 5px;
+	height: 44pt;
+	box-shadow:rgba(0, 0, 0, 0.298039) 0 5px 10px;
+	margin: 15px;
+	background-color: #ECECEC;
+	background-image: -webkit-linear-gradient(#ECECEC 0%, white 100%); 
+	background-image: -moz-linear-gradient(#ECECEC 0%, white 100%); 
+	background-image: -o-linear-gradient(#ECECEC 0%, white 100%); 
+	background-image: linear-gradient(#ECECEC 0%, white 100%);
+}
+	#start h1 {
+		font-size: 36pt;
+		line-height: 0pt;
+	}
+
+#head-wrapper {
+    height: 120px;
+    background-color: white;
+	box-shadow:rgba(0, 0, 0, 0.298039) 0 5px 10px;
+}
+	#header, #content {
+		/* width: 1000px; */
+		margin: 0 auto;
+		overflow: hidden;
+	}
+		#logo {
+			text-align: left;
+			margin: 0px 0px -10px 0px;
+			background-image: url(img/Doppel2.png);
+			float: left;
+			padding-top: 15px;
+			background-repeat: no-repeat;
+		}
+			#logo a {
+				display: block;
+				height: 65%;
+			}
+		#login {
+			display: block;
+			float: right;
+			font-family: calibri;
+			position: relative;
+			right: 0;
+			text-align: right;
+		}
+			#login input {
+				width:142px;
+			}
+		#fehler {
+			border-color: grey;
+			border-style: solid;
+			border-width: 1px;
+			display: block;
+			float: right;
+			font-family: courier;
+			height: auto;
+			margin: -80px 252px 0 0;
+			padding: 3px 0 0;
+			text-align: center;
+			width: 170px;
+		}
+#content-wrapper {
+	height: 100%;
+}
+	#content p, table {
+
+		text-align: left; 
+		padding:0px 20px;
+		margin:10px 20px; 
+	}
+#foot {
+	background-color: white;
+    font-family:univers;
+    padding: 0;
+    height: 22px;
+    width: 100%;
+    text-align:center;
+    margin: 0 auto;
+    border-top-style:solid;
+    border-color:grey;
+    border-width:1px;
+    position: fixed;
+    bottom: 0;
+}	
+	.footlink {
+		display:block;
+		height: 20px;
+		text-align:center;
+		padding: 1px 12px 1px 6px;
+		width:auto;
+		float:left;
+		color: black;
+	}
+	.activefootlink {
+		display:block;
+		height: 21px;
+		text-align:center;
+		padding: 1px 12px 1px 6px;
+		width:auto;
+		float:left;
+		color: black;
+		border-style:solid;
+		border-color:grey;
+		border-width:1px;
+		border-top-style:none;
+		margin: -1 0 0 -1;
+		background-color: #ececec;
+	}
+	#valid{
+		position: fixed;
+		bottom: 21px;
+		right: -7px;
+	}
+	.logged_in {
+		display:block;
+		height: 18px;
+		text-align:center;
+		padding: 1px 1px 0px 0px;
+		margin: -1px 0px 0 5px;
+		width:auto;
+		float:right;
+		color: black;
+		padding: 2px 10px;
+		border-style:solid;
+		border-color:grey;
+		border-width:1px;
+		border-right-style: none;
+	}
+#profilbild {
+	position: relative;
+	margin-top: -200px;
+	margin-left: 400px;
+	
+}
+#logout:hover {background-color:#87CEFA;}
+.footlink:hover {border-style:solid; border-color:grey; border-width:1px; border-top-style:none; border-bottom-style:none; height: 21px; margin: -1 0 0 -1; background-color: #ECECEC; text-decoration:none;}
+.activefootlink:hover  { text-decoration:none;}
+li {margin: 0 18;}
+a:link { text-decoration:none; color:black;}
+a:visited { text-decoration:none; color:black;}
+a:hover { text-decoration:none; color: black;}
+a:active { text-decoration:none;}
+a:focus { text-decoration:none;}

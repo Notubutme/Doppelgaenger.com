@@ -1,0 +1,4 @@
+AuthName "secure"
+AuthType Basic
+AuthUserFile /home/www/web11/html/sub_test/.htpasswd
+require valid-user
