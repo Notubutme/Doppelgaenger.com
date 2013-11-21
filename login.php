@@ -1,7 +1,7 @@
 	<?php
 	//############################################ Datenbank Connect
 		$adress=$_SERVER["DOCUMENT_ROOT"];	// 
-		include("conn.inc.php");		// 
+		include("includes/conn.inc.php");		// 
 		echo $_SERVER["DOCUMENT_ROOT"];
 	//############################################ Datenbank Connect
 	?>
@@ -9,7 +9,7 @@
 <?php  
 	// Session starten 
 	session_start (); 
-	include("log.inc.php");
+	include("includes/log.inc.php");
 	// Datenbankverbindung aufbauen  
 	$connectionid = mysql_connect ($db_location, $db_user, $db_pw);  
 	if (!mysql_select_db ($db_name, $connectionid)) {  

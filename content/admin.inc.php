@@ -1,7 +1,7 @@
 	<?php
 	//############################################ Datenbank Connect
 		$adress=$_SERVER["DOCUMENT_ROOT"];	// 
-		include("conn.inc.php");
+		include("../includes/conn.inc.php");
 	//############################################ Datenbank Connect
 	?>
 <!-- ############################################################################# Assimilierter Code -->		
@@ -30,14 +30,14 @@
 	  if ($zeile['Status'] == "admin") {
 	  	echo ' ';
 	  } else {
-	  	echo '<a href="register.php?id='.$id.'">edit</a>';
+	  	echo '<a href="../register.php?id='.$id.'">edit</a>';
 	  }
 	  echo '</td>';
 	  echo '<td style="text-align:center;">';
 	  if ($zeile['Status'] == "admin") {
 	  	echo ' ';
 	  } else {
-	  	echo '<a href="deleteuser.php?id='.$id.'">X</a>';
+	  	echo '<a href="../includes/deleteuser.php?id='.$id.'">X</a>';
 	  }
 	  echo '</td>';
 	  echo "</tr>";

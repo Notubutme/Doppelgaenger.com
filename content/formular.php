@@ -8,20 +8,11 @@
 			}
 		?>
 	">
-		<form action="login.php" method="post">
+		<form action="../login.php" method="post">
 			<input type="text" name="mail" placeholder="E-Mail"/>						
 			<input type="password" name="pass" placeholder="Passwort"/>
-			<!--<script type="text/javascript">
-				if (window.innerWidth>=960) {
-					var login = "img/Login_Button1.png";
-				}else{
-					var login = "img/Login_Button.png";
-				}
-				document.write('<input type="image" src="'+login+'" alt="Absenden" id="login_button"/>');
-			</script>
-			<!--<input type="image" src="" alt="Absenden" id="login_button"/>-->
 			<input type="submit" value="Login" class="login_button"/>
-			<div class="register"><a href="register.php" class="register_button">Registrieren</a></div>
+			<div class="register"><a href="../register.php" class="register_button">Registrieren</a></div>
 		</form>
 		
 	</div>  <!-- login -->

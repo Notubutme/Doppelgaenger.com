@@ -1,8 +1,8 @@
 <!--#################################################################################################################### Foot -->	
 		<div id="foot">
-			<a class="<?php if ($_active=="6") { echo "activefootlink"; } else { echo "footlink"; } ?>" href="impressum.php">Impressum</a>
-			<a class="<?php if ($_active=="7") { echo "activefootlink"; } else { echo "footlink"; } ?>" href="AGB.php">AGB</a>
-			<a class="<?php if ($_active=="8") { echo "activefootlink"; } else { echo "footlink"; } ?>" href="FAQ.php">FAQ</a>
+			<a class="<?php if ($_active=="6") { echo "activefootlink"; } else { echo "footlink"; } ?>" href="../impressum.php">Impressum</a>
+			<a class="<?php if ($_active=="7") { echo "activefootlink"; } else { echo "footlink"; } ?>" href="../AGB.php">AGB</a>
+			<a class="<?php if ($_active=="8") { echo "activefootlink"; } else { echo "footlink"; } ?>" href="../FAQ.php">FAQ</a>
 			<a class="logged_in"			
 			style="
 				<?php 

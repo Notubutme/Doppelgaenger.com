@@ -1,0 +1,4 @@
+# robots.txt zu www.doppelgaenger.com
+
+User-agent: *
+Disallow:

@@ -9,6 +9,6 @@
 	</p>
 	
 	<h1 id="Start">
-		<a href="http://test.doppelgaenger.com/search.php">Doppelg&auml;nger finden!</a>
+		<a href="../search.php">Doppelg&auml;nger finden!</a>
 	</h1>
 <!--#################################################################################################################### Content -->	

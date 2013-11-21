@@ -1,7 +1,7 @@
 <?php
 //############################################ Datenbank Connect
 	$adress=$_SERVER["DOCUMENT_ROOT"];	// 
-	include("conn.inc.php");		// 
+	include("includes/conn.inc.php");		// 
 //############################################ Variablen Übergabe
 	$id = $_POST["id"];
 	$nickname = $_POST["nickname"];

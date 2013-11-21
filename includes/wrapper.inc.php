@@ -1,11 +1,11 @@
 	<head>
-		<link href="index.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link href="includes/index.css" rel="stylesheet" type="text/css" media="screen"/>
 		<meta name="author" content="Jan Ryklikas"/>
 		<meta name="keywords" lang="de" content="Doppelgaenger"/>
 		<meta name="description" content=
 			"Sie suchen ein Double eines Politikers, eines Schauspielers, oder gar eine komplett kopierte Rockband?
-			In unserer Kartei finden sie professionelle Doubles aus Politik, Wirtschaft, Showbiz, Film &amp; Fernsehen, sowie natu¨rlich Doppelga¨nger mit entsprechend ku¨nstlerischem Talent von diversen Musikern und Entertainern.
-			Fu¨r professionelle Doubles bieten wir die Mo¨glichkeit sich in unsere Kartei einzutragen um so von Interessenten wie Agenturen, TV Produktionsfirmen oder Veranstaltern gefunden zu werden."
+			In unserer Kartei finden sie professionelle Doubles aus Politik, Wirtschaft, Showbiz, Film &amp; Fernsehen, sowie natuï¿½rlich Doppelgaï¿½nger mit entsprechend kuï¿½nstlerischem Talent von diversen Musikern und Entertainern.
+			Fuï¿½r professionelle Doubles bieten wir die Moï¿½glichkeit sich in unsere Kartei einzutragen um so von Interessenten wie Agenturen, TV Produktionsfirmen oder Veranstaltern gefunden zu werden."
 		/>
 		<meta http-equiv="language" content="de"/>
 		<meta http-equiv="imagetoolbar" content="no"/>
@@ -23,8 +23,8 @@
 			<div id="logo">
 				<a href="index.php"><!--<img src="img/Doppel2.png" alt="Doppelg&auml;nger"/>--></a>
 			</div> <!-- logo -->
-			<?php include("formular.php"); ?>	
-			<?php include("profilinfo.inc.php"); ?>
+			<?php include("content/formular.php"); ?>	
+			<?php include("content/profilinfo.inc.php"); ?>
 		</div> <!-- head -->
 	</div> <!-- Head-Wrapper -->
 	<div id="content-wrapper">
@@ -36,7 +36,7 @@
 		<div id="valid">
 			<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
 		</div> <!--  valid -->
-		<?php include("foot.inc.php"); ?>	
+		<?php include("content/foot.inc.php"); ?>	
 	</div> <!-- Foot-Wrapper -->
 	</body>
 </html>

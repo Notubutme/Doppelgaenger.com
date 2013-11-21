@@ -1,6 +1,6 @@
 <?php	
 $requestedId=$_REQUEST['id'];
-include("userRequest.inc.php");
+include("includes/userRequest.inc.php");
 
 if ($_REQUEST['id']==$_SESSION["user_id"]) {echo '<h1> Dein Profil </h1>';}else{echo '<h1> '.$req_nick."'s Profil </h1>";};
 
@@ -15,6 +15,6 @@ echo '<div id="setcard">';
 		echo "<tr><td><b>zuletzt online:</b></td><td>".$req_login."</td></tr>";  
 		echo "<tr><td><b>&Uuml;ber mich:</b></td></tr><tr><td colspan='2' >".$req_notes."</td></tr>";
 	echo "</table>";
-	echo '<div id="profilbild"><img src="user_pics/'.$req_id.'/'.$req_pic.'" style=" max-height: 500px; max-width: 300px;"></div>';
+	echo '<div id="profilbild"><img src="../user_pics/'.$req_id.'/'.$req_pic.'" style=" max-height: 500px; max-width: 300px;"></div>';
 echo '</div>';
 	?>

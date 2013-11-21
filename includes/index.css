@@ -110,7 +110,7 @@ html {
 		#logo {
 			text-align: left;
 			margin: 0px 0px -10px 0px;
-			background-image: url(img/Doppel2.png);
+			background-image: url(../img/Doppel2.png);
 			float: left;
 			padding-top: 15px;
 			background-repeat: no-repeat;
@@ -310,10 +310,12 @@ html {
 		margin: auto;
 		padding-bottom: 3px;
 		border-bottom: black solid 1px;
+                margin-top: 5px;
 	}
 		#content #search #alph {
 			text-align: left;
-			margin-left: 40px;
+			margin-left: 180px;
+                        
 		}
 		#content #search #searchfield {
 			float: right;

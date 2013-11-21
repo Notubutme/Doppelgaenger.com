@@ -2,7 +2,7 @@
 //################################################################################## userRequest.inc.php(
 //############################################ Datenbank Connect
 	$adress=$_SERVER["DOCUMENT_ROOT"];	// 
-	include("conn.inc.php");		// 
+	include("includes/conn.inc.php");		// 
 //############################################ 
 	$connectionid = mysql_connect ($db_location, $db_user, $db_pw);  
 	if (!mysql_select_db ($db_name, $connectionid)) {  

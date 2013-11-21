@@ -2,7 +2,7 @@
 	<?php
 	//############################################ Datenbank Connect
 		$adress=$_SERVER["DOCUMENT_ROOT"];	// 
-		include("conn.inc.php");		// 
+		include("includes/conn.inc.php");		// 
 		echo $_SERVER["DOCUMENT_ROOT"];
 	//############################################ Datenbank Connect
 	?>

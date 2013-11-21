@@ -3,7 +3,7 @@
 
 	<div id="head">
 		<div id="logo">
-			<a href="index.php"><img src="img/logo01.jpg" alt="Logo"></a>
+			<a href="../index.php"><img src="../img/logo01.jpg" alt="Logo"></a>
 		</div> <!-- logo -->
 		<?php include("formular.php"); ?>	
 	</div> <!-- head -->
