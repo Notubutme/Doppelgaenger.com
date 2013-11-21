@@ -9,12 +9,12 @@
 			$requestedId = $_SESSION["user_id"];
 			include("content/userRequest.inc.php");
 		}
-		echo '<form action="write.php" method="POST" enctype="multipart/form-data" id="regiser_form">';
+		echo '<form action="includes/write.inc.php" method="POST" enctype="multipart/form-data" id="regiser_form">';
 		echo "<p>bitte geben sie die zu &auml;ndernden Daten ein:";
 		$button="&auml;ndern";
 	}else {
 		echo "<h1>Registrieren</h1>";
-		echo '<form action="write.php" method="POST" enctype="multipart/form-data" id="regiser_form">';
+		echo '<form action="includes/write.inc.php" method="POST" enctype="multipart/form-data" id="regiser_form">';
 		echo	"<p>Bitte gib deine Daten für die Registrierung ein:<br> ";
 		$button="Registrieren";
 	}

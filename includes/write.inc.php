@@ -1,7 +1,7 @@
 <?php
 //############################################ Datenbank Connect
 	$adress=$_SERVER["DOCUMENT_ROOT"];	// 
-	include("includes/conn.inc.php");		// 
+	include("../includes/conn.inc.php");		// 
 //############################################ Variablen Übergabe
 	$id = $_POST["id"];
 	$nickname = $_POST["nickname"];
@@ -34,13 +34,13 @@
 		}
 		$sql = 'UPDATE benutzerdaten SET Nickname="'.$nickname.'" , Kennwort="'.$passw.'" , Nachname="'.$nachname.'" , Vorname="'.$vorname.'", Kategorien="'.$kategorien.'", Profilbild="'.$bild.'" , Mail="'.$mail.'" , Beschreibung="'.$notes.'" WHERE Id like '.$id.'';
 		if ($_SESSION["user_status"]=="admin"){
-			$header = "Location: admin.php";
+			$header = "Location: ../admin.php";
 		}else{
-			$header = "Location: register.php";
+			$header = "Location: ../register.php";
 		}
 	}else{
 			$sql = "INSERT INTO benutzerdaten (Nickname, Kennwort, Nachname, Vorname, Kategorien, Profilbild, Mail, Beschreibung) VALUES ('".$nickname."', '".md5 ($kennwort)."', '".$nachname."', '".$vorname."', '".$kategorien."', '".$_FILES['profilbild']['name']."', '".$mail."', '".$notes."')";  
-			$header = "Location: login.php?mail=".$mail."&pass=".$kennwort;
+			$header = "Location: ../login.php?mail=".$mail."&pass=".$kennwort;
 ;	}
 //################################## sql Befehl ausführen
 

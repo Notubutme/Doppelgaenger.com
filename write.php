@@ -4,22 +4,22 @@
 <link href="index.css" rel="stylesheet" type="text/css" media="screen" />
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name"author" content="Jan Ryklikas"/>
+	<meta name="author" content="Jan Ryklikas"/>
 		<title>Doppelg&auml;nger</title>
 	</head>
 	<body>
 	<div id="wrapper">
-		<?php echo include("head.inc.php"); ?>
+		<?php echo include("includes/head.inc.php"); ?>
 	<div id="middle">	
 		<div class="main" id="kachel">
-		<?php include("formular.php"); ?>	
+		<?php include("includes/formular.php"); ?>	
 			<div class="content">
 			
 		<?php $id=$_REQUEST["id"];
-		include("write.inc.php"); ?>	
+		include("includes/write.inc.php"); ?>	
 			</div> <!-- content -->
 		</div> <!-- main -->
-		<?php include("foot.inc.php"); ?>		
+		<?php include("includes/foot.inc.php"); ?>		
 	</div> <!-- wrapper -->
 	</body>
 </html>

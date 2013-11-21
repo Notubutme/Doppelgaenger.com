@@ -17,7 +17,9 @@
 		<title>Doppelg&auml;nger</title>
 	</head>
 	<body>
-	<?php session_start (); if (!isset ($_SESSION["user_id"])) { $_login="false"; } else { $_login="true"; } ?>	
+            
+	<?php session_start (); if (!isset ($_SESSION["user_id"])) { $_login="false"; } else { $_login="true"; } ?>
+        <?php require_once 'includes/functions.php'; ?>
 	<div id="head-wrapper">
 		<div id="header">
 			<div id="logo">
