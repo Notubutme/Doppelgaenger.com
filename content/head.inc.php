@@ -1,10 +1,2 @@
-<!--#################################################################################################################### Head -->	
-<?php session_start (); if (!isset ($_SESSION["user_id"])) { $_login="false"; } else { $_login="true"; } ?>	
-
-	<div id="head">
-		<div id="logo">
-			<a href="../index.php"><img src="../img/logo01.jpg" alt="Logo"></a>
-		</div> <!-- logo -->
-		<?php include("formular.php"); ?>	
-	</div> <!-- head -->
-<!--#################################################################################################################### Head -->
+<!DOCTYPE xhtml PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de">

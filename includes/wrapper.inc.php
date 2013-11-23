@@ -17,13 +17,12 @@
 		<title>Doppelg&auml;nger</title>
 	</head>
 	<body>
-            
 	<?php session_start (); if (!isset ($_SESSION["user_id"])) { $_login="false"; } else { $_login="true"; } ?>
         <?php require_once 'includes/functions.php'; ?>
 	<div id="head-wrapper">
 		<div id="header">
 			<div id="logo">
-				<a href="index.php"><!--<img src="img/Doppel2.png" alt="Doppelg&auml;nger"/>--></a>
+				<a href="index.php"></a>
 			</div> <!-- logo -->
 			<?php include("content/formular.php"); ?>	
 			<?php include("content/profilinfo.inc.php"); ?>

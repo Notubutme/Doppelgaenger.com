@@ -1,15 +1,11 @@
-	<?php
-	//############################################ Datenbank Connect
-		$adress=$_SERVER["DOCUMENT_ROOT"];	// 
-		include("includes/conn.inc.php");
-	//############################################ Datenbank Connect
-	?>
-<!-- ############################################################################# Assimilierter Code -->		
-<?php  
-	
-	//Verbindung herstellen
-	$datenbank = mysql_connect($db_location, $db_user, $db_pw);
-	$verbunden = mysql_select_db($db_name);
+<?php
+//############################################ Datenbank Connect
+    $adress=$_SERVER["DOCUMENT_ROOT"];	// 
+    include("includes/conn.inc.php");
+//############################################ Datenbank Connect
+//Verbindung herstellen
+$datenbank = mysql_connect($db_location, $db_user, $db_pw);
+$verbunden = mysql_select_db($db_name);
 if (isset($_REQUEST['char'])) {
         $query = "SELECT * FROM benutzerdaten WHERE (Status != 'admin') AND (Nickname like '".$_REQUEST['char']."%') ORDER BY Nickname";
 }elseif (isset($_REQUEST['nickname'])) {
@@ -21,9 +17,9 @@ $result = mysql_query($query);
 ?>
 <div id="search"><span id="alph"><a href="../search.php">A-Z </a><?php
     for ($i=65; $i<=90; $i++) {
-        $get='?char='.chr($i).'?cat='.$kategorien;
-        echo '<a href="../search.php'.$get.'">| '.chr($i).' </a>';
-	}
+        $get='?char='.chr($i).'&cat='.$kategorien;
+        echo '|<a href="../search.php'.$get.'"> '.chr($i).' </a>';
+    }
     ?>
     </span>
     <form name="suche" action="#" method="GET">
@@ -51,23 +47,20 @@ while ($zeile = mysql_fetch_array( $result, MYSQL_ASSOC))
   <div id="user">
         <table id="usertable">
                 <tr>
-                    <td><?php echo $zeile['Nickname'] ?></td>
-                </tr>
-                <tr>
                     <td>
-                        <a href="../profil.php?id=<?php echo $zeile["Id"];?>" >
-                           <img src="user_pics/<?php echo $zeile["Id"].'/'.$zeile['Profilbild']; ?>" style="max-height:150px;oultine:150px;max-width:150px;" />
+                        <span><?php echo $zeile['Nickname'] ?></span><br />
+                        <a href="profil.php?id=<?php echo $zeile["Id"];?>" >
+                           <img src="user_pics/<?php echo $zeile["Id"].'/'.$zeile['Profilbild']; ?>"  />
                         </a>
                     </td>
                 </tr>
         </table>
   </div>
 <?php }
-	echo "</div>";
-	//Verbindung beenden
-	mysql_close($datenbank);
+echo "</div>";
+//Verbindung beenden
+mysql_close($datenbank);
 ?>
-<!-- ############################################################################# Assimilierter Code -->
-		
+
 
 		

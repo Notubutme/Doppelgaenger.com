@@ -139,6 +139,7 @@ html {
 				padding: 3px 0 3px 0;
 				margin-bottom: -1px;
 			}
+                        #login input[type=submit] {width:144px;}
 			.login_button {
 				background-color:#ECECEC;
 				-webkit-transition: background-color 500ms linear;
@@ -278,7 +279,9 @@ html {
 			
 		}
 	#usertable {
-		height: 218px; width: 198px; text-align: center;
+		max-height: 200px; 
+                width: 200px; 
+                text-align: center;
 	}
 	#user {
 		
@@ -288,10 +291,21 @@ html {
 		#user table {
 			margin: 0px;
 		}
-		#user a:hover {
-			text-decoration: underline;
-			color: grey;
+                #user img{
+                        max-height:150px;
+                        oultine:150px;
+                        max-width:150px;
+                        box-shadow: 10px 10px 5px #888888;
+                        
+                        -moz-transition: 0.3s;
+                        -webkit-transition: 0.3s;
+                        -o-transition: 0.3s;
+                        transition: 0.3s;
+                }
+		#user:hover img{
+                        box-shadow: 8px 8px 4px #888888;
 		}
+                
 	#content p, table, form {
 
 		text-align: left; 
@@ -315,7 +329,9 @@ html {
 		#content #search #alph {
 			text-align: left;
 			margin-left: 180px;
-                        
+		}
+		#content #search #alph a:hover{
+			text-decoration: underline;
 		}
 		#content #search #searchfield {
 			float: right;
@@ -395,6 +411,10 @@ html {
 		margin-top: -370px;
 		margin-left: 515px;
 		float:left;
+                
+                border: 5px solid white;
+                box-shadow: 4px 4px 2px #888888;
+                
 	}
 	
 #logout:hover {background-color:#87CEFA;}

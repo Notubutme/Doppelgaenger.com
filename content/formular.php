@@ -1,4 +1,5 @@
 <!--#################################################################################################################### Login -->
+        <?php $_REQUEST['currentURL'] = $_SERVER['PHP_SELF'] .'?'. $_SERVER['QUERY_STRING']; ?>
 	<div id="login" style="
 		<?php 
 			if ($_login=="true") {
@@ -9,6 +10,7 @@
 		?>
 	">
 		<form action="../login.php" method="post">
+                        <input type="hidden" name='currentURL' value='<?=$_REQUEST['currentURL']; ?>'/>
 			<input type="text" name="mail" placeholder="E-Mail"/>						
 			<input type="password" name="pass" placeholder="Passwort"/>
 			<input type="submit" value="Login" class="login_button"/>
