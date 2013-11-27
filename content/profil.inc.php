@@ -3,7 +3,7 @@
     $loggedIn = $loggedIn['found'];
     $req = getUserData($_REQUEST['id'], "id");
     
-    if ($_REQUEST['id']==$_SESSION["user_id"]) {echo '<h1> Dein Profil </h1>';}else{echo '<h1> '.$req['Nickname']."'s Profil </h1>";};
+    if ($_REQUEST['id']==$_SESSION["user_id"]) {echo '<h2> Dein Profil </h2>';}else{echo '<h2> '.$req['Nickname']."'s Profil </h2>";};
 ?>
 <div id="setcard">
     <table>
